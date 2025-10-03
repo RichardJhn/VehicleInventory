@@ -42,7 +42,7 @@ public class Vehicle {
    }
    public void generateId(){
        for(int i = 0; i < vehicleID.length; i++){
-           vehicleID[i] = (long)(Math.random() * 9000) + 1000;
+           vehicleID[i] = (long)(Math.random() * 900000000) + 100000000;
        }
        for(long id : vehicleID){
            System.out.println("Vehicle ID: " + id);
@@ -84,7 +84,7 @@ public class Vehicle {
            price[i] = randomPrice;
        }
        for(float finalPrice : price){
-           System.out.printf("Price: $%s\n",finalPrice);
+           System.out.printf("Price: $%s0\n",finalPrice);
        }
 
    }
@@ -94,6 +94,7 @@ public class Vehicle {
 
        }
    }
+
 }
 
     //public int getVehicleID() {
